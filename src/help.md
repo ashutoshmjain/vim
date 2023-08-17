@@ -8,14 +8,18 @@ For Vim version 8.2.  Last change: 2020 Aug 15
 
 # VIM - main help file
 - `cd` to the directory you want to save your files and type `vim <file name>`to start Vim. Vim shall automatically create a file for you if it doesn't exist. If it does, it shall open that file. The files are opened in "Normal Mode".
-- You can Move around in normal mode :  Use the cursor keys, or `h` to go left, `j` to go down, `k` to go up, `l` to go right.
+- You home row to move around in normal mode :  
+    - Use the cursor keys, or `h` to go left, 
+    - `j` to go down, 
+    - `k` to go up, 
+    - `l` to go right.
 - If it is a blank file, you would obviously want to type something before you move around. 
     - Press `i` to get into "Insert Mode". 
     - You can press enter to start a new line. 
     - Press `Esc` to get back to "Normal Mode" and resume moving around with `h j k l`
 - Close the window:  Use `:q<Enter>`.
 - Get out of Vim:  Use `:qa!<Enter>` (careful, all changes are lost!).
-- Jump back:  Type `CTRL-O`.  Repeat to go further back.
+- Jump back:  Type `CTRL-O` [^jump].  Repeat to go further back. 
 - **Getting started**:  Inside normal vim mode type `:help vimtutor` for a 30-minute interactive course for the basic commands. 
 - Read the user manual from start to end: `:help usr_01.txt`
 - Inside vim normal mode type  `:help help-summary` for more contexts and an explanation.
@@ -278,5 +282,15 @@ These files explain how to accomplish an editing task.
 |delimitMate.txt|   Trying to keep those beasts at bay! v2.7     *delimitMate*
 |simple-todo.txt|   Manage todo lists. Really simple.
 
-------------------------------------------------------------------------------
+ ---
+
  v
+
+
+ ### Notes
+ 
+ ---
+
+ [^jump] I like to think of `CTRL-O` as the back button in the Browser and `cntrl-i` as the forward- except  that it is with in the document. To know more type in normal mode `:help jumplist`. For even more [read](https://medium.com/@kadek/understanding-vims-jump-list-7e1bfc72cdf0)
+
+
