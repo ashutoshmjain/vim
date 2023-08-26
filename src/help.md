@@ -140,7 +140,7 @@ These files explain how to accomplish an editing task.
 | debug.txt    | debugging Vim itself
 | uganda.txt   | Vim distribution conditions and what to do with your money
 
-### Basic editing ~
+### Basic editing
 | File    | Description                                              |
 | :--------  | :------------------------------------------------------- |
 |starting.txt|	starting Vim, Vim command arguments, initialisation
@@ -258,29 +258,33 @@ These files explain how to accomplish an editing task.
 |os_win32.txt|	MS-Windows
 						*standard-plugin-list*
 ### Standard plugins ~
-| File    | Description                                              |
-| :--------  | :------------------------------------------------------- |
-|pi_getscript.txt| Downloading latest version of Vim scripts
-|pi_gzip.txt|      Reading and writing compressed files
-|pi_logipat.txt|   Logical operators on patterns
-|pi_netrw.txt|     Reading and writing files over a network
-|pi_paren.txt|     Highlight matching parens
-|pi_spec.txt|      Filetype plugin to work with rpm spec files
-|pi_tar.txt|       Tar file explorer
-|pi_vimball.txt|   Create a self-installing Vim script
-|pi_zip.txt|       Zip archive explorer
+| File             | Description                                              |
+| :--------        | :------------------------------------------------------- |
+| pi_getscript.txt | Downloading latest version of Vim scripts
+| pi_gzip.txt      | Reading and writing compressed files
+| pi_logipat.txt   | Logical operators on patterns
+| pi_netrw.txt     | Reading and writing files over a network
+| pi_paren.txt     | Highlight matching parens
+| pi_spec.txt      | Filetype plugin to work with rpm spec files
+| pi_tar.txt       | Tar file explorer
+| pi_vimball.txt   | Create a self-installing Vim script
+| pi_zip.txt       | Zip archive explorer
 
-### LOCAL ADDITIONS:				*local-additions*
-| File    | Description                                              |
-| :--------  | :------------------------------------------------------- |
-|fugitive.txt|  A Git wrapper so awesome, it should be illegal
-|goyo.txt|	goyo	Last change: April 2 2017
-|markdown-folding.txt|	For Vim version 7.3	Last change: 2012 Oct 26
-|lightline.txt|	A light and configurable statusline/tabline for Vim
-|syntastic-checkers.txt|	Syntastic checkers
-|syntastic.txt|   Syntax checking on the fly has never been so pimp.
-|delimitMate.txt|   Trying to keep those beasts at bay! v2.7     *delimitMate*
-|simple-todo.txt|   Manage todo lists. Really simple.
+### Local Additions ~
+> With in vim type `:help local-additions`
+
+| File                   | Description                                                |
+| :--------              | :-------------------------------------------------------   |
+| fugitive.txt           | A Git wrapper so awesome, it should be illegal             |  
+| goyo.txt               | goyo	Last change: April 2 2017                             |
+| Tabular.txt            | Configurable, flexible, intuitive text aligning            |
+| surround.txt           | Plugin for deleting, changing, and adding "surroundings"   |
+| lightline.txt          | A light and configurable statusline/tabline for Vim        |
+| syntastic-checkers.txt | Syntastic checkers                                         |
+| syntastic.txt          | Syntax checking on the fly has never been so pimp.         |
+| delimitMate.txt        | Trying to keep those beasts at bay! v2.7     *delimitMate* |
+| simple-todo.txt        | Manage todo lists. Really simple.                          |
+                                                                                      
 
  ---
 
