@@ -1,3 +1,5 @@
+# getting started
+
 This chapter introduces the manuals available with Vim. Read this to
 know the conditions under which the commands are explained.
 
@@ -10,7 +12,7 @@ know the conditions under which the commands are explained.
 \|01.4\| Copyright
 
 
-# Two manuals
+## Two manuals
 
 The Vim documentation consists of two parts:
 
@@ -18,7 +20,7 @@ The Vim documentation consists of two parts:
 
 2\. The Reference manual Precise description of how everything in Vim works.
 
-# Vim installed
+## Vim installed
 
 Most of the manuals assume that Vim has been properly installed. If you didn't do that yet, or if Vim doesn\'t run properly (e.g., files can\'t be found or in the GUI the menus do not show up) first read the chapter on installation: \|usr_90.txt\|. \*not-compatible\* The manuals often assume you are using Vim with Vi-compatibility switched off. For most commands this doesn\'t matter, but sometimes it is important, e.g., for multi-level undo. An easy way to make sure you are using a nice setup is to copy the example vimrc file. By doing this inside Vim you don\'t have to check out where it is located. How to do this depends on the system you are using:
 
@@ -49,7 +51,7 @@ For more info see \|vimrc\| and \|compatible-default\|.
 
 > Note: This manual is about using Vim in the normal way. There is an alternative called \"evim\" (easy Vim). This is still Vim, but used in a way that resembles a click-and-type editor like Notepad. It always stays in Insert mode, thus it feels very different. It is not explained in the user manual, since it should be mostly self-explanatory. See \|evim-keys\| for details.
 
-# Using the Vim tutor
+## Using the Vim tutor
 
 Instead of reading the text (boring!) you can use the vimtutor to learn
 your first Vim commands. This is a 30-minute tutorial that teaches the
@@ -80,7 +82,7 @@ On other systems, you have to do a little work:
 >
 > 3\. Delete the copied file when you are finished with it: \> del TUTORCOPY \<
 
-# Copyright
+## Copyright
 
 The Vim user manual and reference manual are Copyright (c) 1988-2003 by
 Bram Moolenaar. This material may be distributed only subject to the
@@ -105,8 +107,4 @@ If you make money through selling the manuals, you are strongly
 encouraged to donate part of the profit to help AIDS victims in Uganda.
 See \|iccf\|.
 
-==============================================================================
-
-Next chapter: \|usr_02.txt\| The first steps in Vim
-
-Copyright: see \|manual-copyright\| vim:tw=78:ts=8:noet:ft=help:norl:
+---
