@@ -1,61 +1,35 @@
 # first steps
-Text on this page is based on *usr_02.txt*	for Vim version 8.2.  Last change: 2019 Nov 21
+Text on this page is based on *usr_02.txt*	for Vim version 8.2.  Last change to the original version : 2019 Nov 21
 
-		     VIM USER MANUAL - by Bram Moolenaar
-
-			    The first steps in Vim
+>		     VIM USER MANUAL - by Bram Moolenaar
+>
+>			    The first steps in Vim
 
 
 This chapter provides just enough information to edit a file with Vim.  Not
 well or fast, but you can edit.  Take some time to practice with these
 commands, they form the base for what follows.
 
-|02.1|	Running Vim for the First Time
-
-|02.2|	Inserting text
-
-|02.3|	Moving around
-
-|02.4|	Deleting characters
-
-|02.5|	Undo and Redo
-
-|02.6|	Other editing commands
-
-|02.7|	Getting out
-
-|02.8|	Finding help
+- Running Vim for the First Time
+- Inserting text
+- Moving around
+- Deleting characters
+- Undo and Redo
+- Other editing commands
+- Getting out
+- Finding help
 
 ## Running Vim for the First Time
 
 To start Vim, enter this command: >
 
-	gvim file.txt
+        	gvim file.txt
 
-In UNIX you can type this at any command prompt.  If you are running Microsoft
-Windows, open a Command Prompt and enter the command.
-   In either case, Vim starts editing a file called file.txt.  Because this
-is a new file, you get a blank window. This is what your screen will look
-like:
+In UNIX you can type this at any command prompt.  If you are running Microsoft Windows, open a Command Prompt and enter the command.
 
-	+----------------------------------------------------------------------+
+In either case, Vim starts editing a file called file.txt.  Because this is a new file, you get a blank window. This is what your screen will look like:
 
-	|#					|
-
-	|~					|
-
-	|~					|
-
-	|~					|
-
-	|~					|
-
-	|"file.txt" [New file]			|
-
-	+---------------------------------------+
-
-		('#" is the cursor position.)
-        
+![](vimScreen.png)
 
 The tilde (~) lines indicate lines not in the file.  In other words, when Vim
 runs out of file to display, it displays tilde lines.  At the bottom of the
@@ -93,23 +67,9 @@ limerick, this is what you type: >
 	iA very intelligent turtle
 	Found programming UNIX a hurdle
 
-After typing "turtle" you press the \<Enter> key to start a new line.  Finally
-you press the \<Esc> key to stop Insert mode and go back to Normal mode.  You
-now have two lines of text in your Vim window:
+After typing "turtle" you press the \<Enter> key to start a new line.  Finally you press the \<Esc> key to stop Insert mode and go back to Normal mode.  You now have two lines of text in your Vim window:
 
-	+----------------------------------------------------------------------+
-
-	|A very intelligent turtle		|
-
-	|Found programming UNIX a hurdle	|
-
-	|~					|
-
-	|~					|
-
-	|					|
-	+---------------------------------------+
-
+![](vimScreen2.png)
 
 WHAT IS THE MODE?
 
@@ -122,22 +82,9 @@ line of the window.  That's where you type colon commands (commands that start
 with a colon).  Finish this command by pressing the <Enter> key (all commands
 that start with a colon are finished this way).
 
-   Now, if you type the "i" command Vim will display --INSERT-- at the bottom
-of the window.  This indicates you are in Insert mode.
+   Now, if you type the "i" command Vim will display --INSERT-- at the bottom of the window.  This indicates you are in Insert mode.
 
-	+-----------------------------------------------------------------------+
-    
-	|A very intelligent turtle		|
-
-	|Found programming UNIX a hurdle	|
-    
-	|~					|
-
-	|~					|
-
-	|-- INSERT --				|
-
-	+---------------------------------------+
+![](vimScreen3.png)
 
 If you press \<Esc> to go back to Normal mode the last line will be made blank.
 
@@ -199,52 +146,23 @@ For Japanese users, Hiroshi Iwatani suggested using this:
 
 ## Deleting characters
 
-To delete a character, move the cursor over it and type "x".  (This is a
-throwback to the old days of the typewriter, when you deleted things by typing
-xxxx over them.)  Move the cursor to the beginning of the first line, for
-example, and type xxxxxxx (seven x's) to delete "A very ".  The result should
-look like this:
+To delete a character, move the cursor over it and type "x".  (This is a throwback to the old days of the typewriter, when you deleted things by typing xxxx over them.)  Move the cursor to the beginning of the first line, for example, and type xxxxxxx (seven x's) to delete "A very ".  The result should look like this:
 
-	+----------------------------------------------------------------------+
-    
-	|intelligent turtle			|
-	|Found programming UNIX a hurdle	|
-	|~					|
-	|~					|
-	|					|
-	+---------------------------------------+
+![](vimScreen4.png)
 
 Now you can insert new text, for example by typing: >
 
 	iA young <Esc>
 
-This begins an insert (the i), inserts the words "A young", and then exits
-insert mode (the final <Esc>).	The result:
+This begins an insert (the i), inserts the words "A young", and then exits insert mode (the final \<Esc>).	The result:
 
-	+----------------------------------------------------------------------+
-
-	|A young intelligent turtle		|
-	|Found programming UNIX a hurdle	|
-	|~					|
-	|~					|
-	|					|
-	+---------------------------------------+
-
+![](vimScreen5.png)
 
 DELETING A LINE
 
-To delete a whole line use the "dd" command.  The following line will
-then move up to fill the gap:
+To delete a whole line use the "dd" command.  The following line will then move up to fill the gap:
 
-	+----------------------------------------------------------------------+
-
-	|Found programming UNIX a hurdle	|
-	|~					|
-	|~					|
-	|~					|
-	|					|
-	+---------------------------------------+
-
+![](vimScreen6.png)
 
 DELETING A LINE BREAK
 
