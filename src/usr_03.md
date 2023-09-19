@@ -1,13 +1,13 @@
 >   For Vim version 8.2.  Last change: 2020 Sep 03
 >
->		     VIM USER MANUAL - by Bram Moolenaar
+>   VIM USER MANUAL - by Bram Moolenaar
 
 
 # Moving around
 
 Before you can insert or delete text the cursor has to be moved to the right place.  Vim has a large number of commands to position the cursor.  This chapter shows you how to use the most important ones.  You can find a list of these commands below |Q_lr|.
 
-| ####  | Topic                                     |
+| #     | Topic                                     |
 | ----  | ------------------------------------------|
 | 03.1  | Word movement                             |
 | 03.2  | Moving to the start or end of a line      |
@@ -261,9 +261,9 @@ To see where you are in a file, there are three ways:
 	"usr_03.txt" line 233 of 650 --35%-- col 45-52 ~
 
 ```
-    This shows the name of the file you are editing, the line number where the cursor is, the total number of lines, the percentage of the way through the file and the column of the cursor.
+This shows the name of the file you are editing, the line number where the cursor is, the total number of lines, the percentage of the way through the file and the column of the cursor.
        
-       Sometimes you will see a split column number.  For example, "col 2-9".  This indicates that the cursor is positioned on the second character, but because character one is a tab, occupying eight spaces worth of columns, the screen column is 9.
+Sometimes you will see a split column number.  For example, "col 2-9".  This indicates that the cursor is positioned on the second character, but because character one is a tab, occupying eight spaces worth of columns, the screen column is 9.
 
 2.  Set the 'number' option.  This will display a line number in front of
     every line: >
@@ -277,9 +277,9 @@ To see where you are in a file, there are three ways:
 ```
 	:set nonumber
 ```
-    Since 'number' is a boolean option, prepending "no" to its name has the effect of switching it off.  A boolean option has only these two values, it is either on or off.
+Since 'number' is a boolean option, prepending "no" to its name has the effect of switching it off.  A boolean option has only these two values, it is either on or off.
 
-       Vim has many options.  Besides the boolean ones there are options with a numerical value and string options.  You will see examples of this where they are used.
+Vim has many options.  Besides the boolean ones there are options with a numerical value and string options.  You will see examples of this where they are used.
 
 3.  Set the 'ruler' option.  This will display the cursor position in the
     lower right corner of the Vim window: >
@@ -743,4 +743,4 @@ You will notice a few special marks.  These include:
 ```
 
 
-Copyright: see |manual-copyright|  vim:tw=78:ts=8:noet:ft=help:norl:
+Copyright: see |manual-copyright|
